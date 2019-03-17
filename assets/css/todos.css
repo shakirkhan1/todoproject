@@ -1,0 +1,159 @@
+#container{
+	width:400px;
+	margin:100px auto;
+	background-color: #2f4f4f /*#f7f7f7*/;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	opacity: 0.8;
+}
+
+.completed{
+	color:gray;
+	text-decoration: line-through;
+}
+
+
+.fa-plus{
+	float:right;
+}
+
+.right{
+	float:right;
+	color:gray;
+	padding-right:9px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none ;/* to remove default bullets*/
+}
+li{
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	color: black;
+}
+
+
+li:nth-child(2n){
+	background-color: #f7f7f7;
+}
+
+
+#bod{
+	background-color: #2980B9;
+	}
+
+
+h1 {
+	background-color: #2f4f4f;
+	color: white;
+	margin:0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size:24px;
+	font-weight: normal;
+}
+input{
+	font-size: 18px;
+	background-color: #f7f7f7;
+	height: 40px;
+	width:100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	color:blue;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus{
+	background-color: #fff;
+	border:3px solid #2f4f4f;
+	outline:none;
+	padding-left:10px ;
+}
+
+#abt{
+	 cursor: pointer;
+}
+.accordion{
+	font-size: 18px;
+	background-color: #eee;
+    color: #444;
+    cursor: pointer;
+	height: 40px;
+	width:100%;
+	text-align: left;
+	padding-left:20px;
+	line-height: 40px;
+	border: none;
+	outline:none;
+	 
+}
+
+.active .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+span{
+	background-color: #e74c3c;
+	color: white;
+	height: 40px;
+	margin-right: :20px;
+	text-align: center;
+
+	display: inline-block;
+	width:0;
+	transition:0.3s linear;
+	opacity:0;
+} 
+li:hover span{
+	width:40px;
+	opacity:1.0;
+}
+
+
+/*below code is to create side-nav for about section with animation*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
